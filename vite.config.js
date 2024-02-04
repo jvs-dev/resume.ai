@@ -10,6 +10,7 @@ export default defineConfig({
   // configuração de rotas
   routes: [
     { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/index.html" }
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/resumos", "dest": "/resumos.html" }
   ],
 });
