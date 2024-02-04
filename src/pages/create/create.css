@@ -1,0 +1,78 @@
+.main__createResumeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: var(--white-gray);
+    border-radius: 90px;
+    padding: 15px 20px;
+    width: 80vw;
+    max-width: 700px;
+}
+
+.main__createResumeDiv__icon {
+    font-size: 22px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.main__createResumeDiv__input {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    background: none;
+    border: 0px;
+    outline-width: 0px;
+}
+
+.main__createResumeDiv__input::placeholder {
+    opacity: 0.6;
+}
+
+.main__responseResume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white-gray);
+    border-radius: 20px;
+    padding: 15px 20px;
+    width: 80vw;
+    max-width: 700px;
+    position: relative;
+    margin: 20px 0px 0px 0px;
+}
+
+.responseResume__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px 15px 0px 0px;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: 0px;
+    outline-width: 0px;
+    background: linear-gradient(130deg, #5100ff2f, #00ffff2f);
+    color: var(--black);
+    font-size: 15px;
+}
+
+.responseResume__textarea {
+    width: 100%;
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+    background: none;
+    border: 0px;
+    outline-width: 0px;
+    resize: none;
+}
+
+.responseResume__textarea::placeholder {
+    opacity: 0.6;
+}

@@ -1,0 +1,18 @@
+:root {
+    --white: #fff;
+    --black: #131313;
+    --white-gray: #EEEEEE;
+    --blue: #5200FF;
+    --cyan: #00FFFF;
+}
+
+body {
+    margin: 0px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}

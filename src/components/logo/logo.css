@@ -1,0 +1,15 @@
+.main__logo {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0px;
+    color: var(--black);
+}
+
+.logo__span {
+    background: linear-gradient(135deg, var(--blue), var(--cyan));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
