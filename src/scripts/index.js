@@ -7,6 +7,7 @@ if (root == "/") {
 
 if (root == "/resumos") {
     console.log("Meus resumos");
+    window.location.href = "resumos.html"
 }
 
 if (root == "/api") {
