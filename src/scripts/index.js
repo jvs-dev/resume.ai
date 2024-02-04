@@ -3,7 +3,7 @@ let root = window.location.pathname
 
 if (root == "/") {
     console.log("home");
-    body.innerHTML`
+    body.innerHTML=`
     <main id="main">
     <header class="main__header">
       <nav class="header__nav">
