@@ -1,0 +1,138 @@
+.main__loginSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: #1313139c;
+    transition: 0.5s;
+}
+
+.loginSection__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--white);
+    border-radius: 20px;
+    padding: 0px 40px 20px 40px;
+}
+
+.loginSection__divInput {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 0px 0px 15px 0px;
+}
+
+.loginSection__divInput.unshow {
+    opacity: 0;
+    display: none;
+}
+
+.divInput__div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: var(--white-gray);
+    border-radius: 90px;
+    padding: 10px 14px;
+    width: 80vw;
+    max-width: 500px;
+}
+
+.divInput__p {
+    margin: 0px 0px 5px 0px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.divInput__icon {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.divInput__input {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+    background: none;
+    border: 0px;
+    outline-width: 0px;
+    width: 100%;
+}
+
+.divInput__input::placeholder {
+    opacity: 0.6;
+}
+
+.loginSection__btn {
+    color: var(--white);
+    background: linear-gradient(130deg, var(--blue), var(--cyan));
+    border: 0px;
+    outline-width: 0px;
+    border-radius: 90px;
+    padding: 5px 0px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80vw;
+    max-width: 500px;
+}
+
+.loginSection__remember {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin: 15px 0px 10px 0px;
+}
+
+.loginSection__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+    border-radius: 100%;
+    border: solid 2px var(--black);
+    cursor: pointer;
+}
+
+.loginSection__checkbox.active span {
+    background: var(--blue);
+    border-radius: 100%;
+    width: 8px;
+    height: 8px;
+    padding: 0px;
+    margin: 0px;
+}
+.loginSection__checkbox.active {
+    border: solid 2px var(--blue);
+}
+
+.loginSection__remember__p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black);
+    margin: 0px;
+}
+
+.loginSection__alterToSignIn {
+    background: none;
+    color: var(--blue);
+    border: 0px;
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+    outline-width: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}

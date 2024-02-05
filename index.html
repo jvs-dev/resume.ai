@@ -16,31 +16,68 @@
   <link rel="stylesheet" href="src/components/header/header.css">
   <link rel="stylesheet" href="src/components/logo/logo.css">
   <link rel="stylesheet" href="src/components/author/author.css">
+  <link rel="stylesheet" href="src/pages/login/login.css">
+  <link rel="stylesheet" href="src/components/error/error.css">
 </head>
 
 <body>
   <main id="main">
+    <section class="main__loginSection">
+      <div class="loginSection__container">
+        <h1 class="main__logo">RESUME.<span class="logo__span">Ai</span></h1>
+        <div class="loginSection__divInput">
+          <p class="divInput__p">Email</p>
+          <div class="divInput__div">
+            <ion-icon class="divInput__icon" name="mail-outline"></ion-icon>
+            <input class="divInput__input" type="email" placeholder="Digite seu email" id="email" required>
+          </div>
+        </div>
+        <div class="loginSection__divInput">
+          <p class="divInput__p">Senha</p>
+          <div class="divInput__div">
+            <ion-icon class="divInput__icon" name="lock-closed-outline"></ion-icon>
+            <input class="divInput__input" type="password" placeholder="Digite sua senha" id="password" required>
+          </div>
+        </div>
+        <div class="loginSection__divInput unshow" id="confirmPasswordDiv">
+          <p class="divInput__p">Confirmar senha</p>
+          <div class="divInput__div">
+            <ion-icon class="divInput__icon" name="lock-closed-outline"></ion-icon>
+            <input class="divInput__input" type="password" placeholder="Digite sua senha" id="confirmPassword">
+          </div>
+        </div>
+        <button class="loginSection__btn" id="loginBtn">LOGIN</button>
+        <div class="loginSection__remember">
+          <span class="loginSection__checkbox" id="rememberMe"><span></span></span>
+          <p class="loginSection__remember__p">Lembrar-se de mim?</p>
+        </div>
+        <button class="loginSection__alterToSignIn" id="alterToSignIn">Criar conta</button>
+      </div>
+    </section>
     <header class="main__header">
       <nav class="header__nav">
-        <a class="header__nav__a" href="#">Criar resumo</a>
-        <a class="header__nav__a" href="#">Meus resumos</a>
+        <a class="header__nav__a" href="/">Criar resumo</a>
+        <a class="header__nav__a" href="/resumos">Meus resumos</a>
       </nav>
       <button class="header__nav__btn" type="button">View API</button>
     </header>
     <h1 class="main__logo">RESUME.<span class="logo__span">Ai</span></h1>
     <div class="main__createResumeDiv">
       <ion-icon class="main__createResumeDiv__icon" name="search"></ion-icon>
-      <input class="main__createResumeDiv__input" type="text" id="createResumeInput" placeholder="Digite o que deseja resumir" aria-disabled="true">
+      <input class="main__createResumeDiv__input" type="text" id="createResumeInput"
+        placeholder="Digite o que deseja resumir" aria-disabled="true">
     </div>
     <div class="main__responseResume">
       <button class="responseResume__btn" id="copyResume"><ion-icon name="copy-outline"></ion-icon></button>
-      <textarea class="responseResume__textarea" name="dataResume" id="dataResume" cols="30" rows="10" placeholder="Seu resumo aparecerá aqui"></textarea>
+      <textarea class="responseResume__textarea" name="dataResume" id="dataResume" cols="30" rows="10"
+        placeholder="Seu resumo aparecerá aqui"></textarea>
     </div>
     <a class="author" href="#">JVS-DEV<ion-icon name="code-slash"></ion-icon></a>
   </main>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script type="module" src="src/scripts/index.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+  <script type="module" src="src/pages/login/login.js"></script>
+  <script type="module" src="src/pages/create/createResume.js"></script>
 </body>
 
 </html>

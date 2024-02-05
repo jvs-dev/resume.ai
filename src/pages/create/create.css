@@ -59,6 +59,7 @@
     background: linear-gradient(130deg, #5100ff2f, #00ffff2f);
     color: var(--black);
     font-size: 15px;
+    cursor: pointer;
 }
 
 .responseResume__textarea {
